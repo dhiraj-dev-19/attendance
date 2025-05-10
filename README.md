@@ -1,22 +1,48 @@
-Project: Face Attendance System with GUI
+# Face Attendance System with GUI
 
-Description:
-Developed a real-time facial recognition system that automates attendance tracking using Python and computer vision. The system identifies registered faces via webcam, logs entries in CSV format, and features a user-friendly GUI for live monitoring and status updates.
+![System Demo](assets/screenshot.png) *Add demo screenshot/video here*
 
-Key Features:
+A real-time facial recognition attendance system with enhanced GUI controls, offering smooth performance and intuitive face management.
 
-Real-time face detection and recognition using OpenCV and face_recognition
+## Key Features ✨
 
-GUI interface with live webcam feed and system console (Tkinter)
+- **GUI-Based Face Registration**  
+  Register new faces directly through the interface - no manual file management required
+- **High-FPS Webcam Feed**  
+  Multithreaded processing delivers smooth 30+ FPS live video
+- **Smart Attendance Logging**  
+  Automatic CSV entries with timestamp & date (Documents/attendance.csv)
+- **Real-Time Face Annotations**  
+  Live bounding boxes and name tags for recognized faces
+- **Duplicate Prevention**  
+  Blocks same-day duplicate entries and duplicate name registrations
+- **Face Validation System**  
+  Auto-detects invalid images (multiple faces/no faces) during registration
+- **Responsive Interface**  
+  Threaded design keeps GUI responsive during heavy processing
+- **System Console**  
+  Scrollable log panel with timestamped status updates and errors
 
-Automatic attendance logging with timestamp and date
+## Technical Stack 💻
 
-Duplicate entry prevention for same-day attendance
+**Core Technologies**  
+⌙ Python 3.11+  
+⌙ OpenCV (cv2) - Real-time video processing  
+⌙ face_recognition - Face detection & recognition  
+⌙ Tkinter - GUI interface  
 
-Easy setup with plug-and-play face registration (add images to known_faces folder)
+**Supporting Libraries**  
+⌙ Pillow (PIL) - Image processing  
+⌙ NumPy - Array operations  
+⌙ Threading - Concurrent processing  
 
-Technical Stack:
+## Installation ⚙️
 
-Python, OpenCV, face_recognition, dlib, Tkinter
+1. **Prerequisites**:
+   - Webcam
+   - Python 3.11+ 
+   - Windows/macOS/Linux
 
-CSV for data storage, PIL for image processing
+2. **Install dependencies**:
+   ```bash
+   pip install opencv-python numpy face-recognition pillow
