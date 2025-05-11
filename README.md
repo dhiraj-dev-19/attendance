@@ -1,6 +1,6 @@
 # Face Attendance System with GUI
 
-![System Demo](assets/screenshot.png) *Add demo screenshot/video here*
+![System Demo](assets/screenshot.png) 
 
 A real-time facial recognition attendance system with enhanced GUI controls, offering smooth performance and intuitive face management.
 
